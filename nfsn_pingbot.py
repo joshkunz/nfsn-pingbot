@@ -24,7 +24,7 @@ def update_if_needed(nfsn, domain, subdomain, ip):
     nfsn.dns(domain).removeRR(name=subdomain, type="A", data=rr.data)
     nfsn.dns(domain).addRR(name=subdomain, type="A", data=ip)
 
-if __name __ == "__main__":
+if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("nfsn_login")
