@@ -1,13 +1,13 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 git_repository(
-    name = "io_bazel_rules_python",
+    name = "rules_python",
     remote = "https://github.com/bazelbuild/rules_python.git",
-    commit = "ebd7adcbcafcc8abe3fd8e5b0e42e10ced1bfe27",
+    commit = "93d8b0af6d8ca1ee37816a829085d7092b04cc7b",
 )
 
 # Only needed for PIP support:
-load("@io_bazel_rules_python//python:pip.bzl", "pip_repositories", "pip_import")
+load("@rules_python//python:pip.bzl", "pip_repositories", "pip_import")
 
 pip_repositories()
 
