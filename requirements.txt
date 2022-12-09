@@ -1,5 +1,5 @@
 beanbag==1.9.2
-certifi==2021.5.30
+certifi==2022.12.7
 chardet==4.0.0
 idna==2.10
 python-nfsn==1.1.1
